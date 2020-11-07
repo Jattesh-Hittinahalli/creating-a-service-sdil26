@@ -1,19 +1,17 @@
-<h1>Show List from API Data in Angular</h1>
-<table border="$1">
-	<tr>
-		<td>Id</td>
-		<td>Title</td>
-		<td>User Id</td>
-	</tr>
+<h1 align="center">Data From API</h1>
 
+<table border="$1" align="center">
+  <tr>
+    <td>ID</td>
+    <td>Email</td>
+    <td>First Name</td>
+    <td>Last Name</td>
+  </tr>
 
-<tr *ngFor="let item of data">
-		<td>Id</td>
-		<td>Title</td>
-		<td>User Id</td>
-	</tr>
-
-
-
-
+  <tr *ngFor="let obj of model">
+    <td>{{obj.id}}</td>
+    <td>{{obj.email}}</td>
+    <td>{{obj.first_name}}</td>
+    <td>{{obj.last_name}}</td>
+  </tr>
 </table>
