@@ -8,7 +8,8 @@ import { BooksService } from './books.service';
 import { LoginService } from './login.service';
 import { LogginServiceService } from './loggin-service.service';
 import { LoggingService } from './logging.service';
-import {HttpClientModule} from '@angular/common/http'
+import {HttpClientModule} from '@angular/common/http';
+import { FilterPipe } from './filter.pipe'
 
 @NgModule({
   imports:    
@@ -18,7 +19,7 @@ import {HttpClientModule} from '@angular/common/http'
       HttpClientModule 
       ],
   declarations:
-   [ AppComponent, HelloComponent ],
+   [ AppComponent, HelloComponent, FilterPipe ],
   providers: [
     BooksService,
     LoginService,

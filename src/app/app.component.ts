@@ -22,7 +22,10 @@ export class AppComponent {
     this.user.getData().subscribe(data => {
       console.warn(data);
       this.data = data;
+      namesearch:string=''
+      
     });
+    
     this.model = [
       {
         id: 7,
@@ -73,5 +76,6 @@ export class AppComponent {
           "https://s3.amazonaws.com/uifaces/faces/twitter/hebertialmeida/128.jpg"
       }
     ];
+   
   }
 }
