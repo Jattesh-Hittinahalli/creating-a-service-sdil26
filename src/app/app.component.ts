@@ -22,7 +22,7 @@ export class AppComponent {
     this.user.getData().subscribe(data => {
       console.warn(data);
       this.data = data;
-      namesearch:string=''
+      
       
     });
     

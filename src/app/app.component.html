@@ -45,8 +45,8 @@
             class="form-control"
             id="Search"
             placeholder="Search"
-            [(ngModel)]="namesearch">
-          
+            [(ngModel)]="namesearch"
+          />
         </div>
       </div>
 
@@ -61,7 +61,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr *ngFor="let obj of model | filter:namesearch">
+            <tr *ngFor="let obj of model ">
               <th scope="row">{{obj.id}}</th>
               <td>{{obj.first_name}}</td>
               <td>{{obj.last_name}}</td>
